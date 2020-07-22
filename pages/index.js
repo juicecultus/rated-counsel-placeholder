@@ -23,13 +23,25 @@ export default function Home() {
 
         <h2>Follow us on social</h2>
         <div className='grid'>
-          <a href='https://www.facebook.com/RatedCounsel' className='card'>
+          <a
+            href='https://www.facebook.com/RatedCounsel'
+            target='_blank'
+            className='card'
+          >
             <p>Facebook</p>
           </a>
-          <a href='https://twitter.com/ratedcounsel' className='card'>
+          <a
+            href='https://twitter.com/ratedcounsel'
+            target='_blank'
+            className='card'
+          >
             <p>Twitter</p>
           </a>
-          <a href='https://www.instagram.com/ratedcounsel/' className='card'>
+          <a
+            href='https://www.instagram.com/ratedcounsel/'
+            target='_blank'
+            className='card'
+          >
             <p>Instagram</p>
           </a>
         </div>
