@@ -1,62 +1,42 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className='title'>
+          <a>Welcome to Rated Counsel!</a>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
+        <p className='description'>
+          The future of legal recruitment is about to begin...
         </p>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <h2 className='subtitle'>
+          <a>Watch this space</a>
+        </h2>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+        <h2>Follow us on social</h2>
+        <div className='grid'>
+          <a href='https://www.facebook.com/RatedCounsel' className='card'>
+            <p>Facebook</p>
           </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href='https://twitter.com/ratedcounsel' className='card'>
+            <p>Twitter</p>
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href='https://www.instagram.com/ratedcounsel/' className='card'>
+            <p>Instagram</p>
           </a>
         </div>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        <p>Copyright Rated Counsel Limited - all rights reserved</p>
       </footer>
 
       <style jsx>{`
@@ -119,6 +99,17 @@ export default function Home() {
           font-size: 4rem;
         }
 
+        .subtitle {
+          margin: 0 0 2rem 0;
+          line-height: 1.15;
+          font-size: 2rem;
+        }
+
+        .subtitle a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+
         .title,
         .description {
           text-align: center;
@@ -127,6 +118,10 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+
+        h2 {
+          color: green;
         }
 
         code {
@@ -143,14 +138,13 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
-          margin-top: 3rem;
+          margin-top: 1rem;
+          flex-direction: row;
         }
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
@@ -167,7 +161,7 @@ export default function Home() {
           border-color: #0070f3;
         }
 
-        .card h3 {
+        .card h2 {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
@@ -205,5 +199,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
