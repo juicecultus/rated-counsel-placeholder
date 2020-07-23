@@ -22,27 +22,15 @@ export default function Home() {
         </h2>
 
         <h2>Follow us on social</h2>
-        <div className='grid'>
-          <a
-            href='https://www.facebook.com/RatedCounsel'
-            target='_blank'
-            className='card'
-          >
-            <p>Facebook</p>
+        <div className='wrapper'>
+          <a href='https://www.facebook.com/RatedCounsel' target='_blank'>
+            <i className='fa fa-5x fa-facebook-square'></i>
           </a>
-          <a
-            href='https://twitter.com/ratedcounsel'
-            target='_blank'
-            className='card'
-          >
-            <p>Twitter</p>
+          <a href='https://twitter.com/ratedcounsel' target='_blank'>
+            <i className='fa fa-5x fa-twitter-square'></i>
           </a>
-          <a
-            href='https://www.instagram.com/ratedcounsel/'
-            target='_blank'
-            className='card'
-          >
-            <p>Instagram</p>
+          <a href='https://www.instagram.com/ratedcounsel/' target='_blank'>
+            <i className='fa fa-5x fa-instagram'></i>
           </a>
         </div>
       </main>
@@ -199,6 +187,8 @@ export default function Home() {
       <style jsx global>{`
         html,
         body {
+          text-align: center;
+          box-sizing: border-box;
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -208,6 +198,68 @@ export default function Home() {
 
         * {
           box-sizing: border-box;
+        }
+
+        .wrapper {
+          display: inline-flex;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+          justify-content: center;
+        }
+
+        i {
+          padding: 0px 10px;
+        }
+
+        .wrapper i:nth-child(1) {
+          color: #4867aa;
+          cursor: pointer;
+          text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+          transition: all ease-in-out 150ms;
+        }
+
+        .wrapper i:nth-child(1):hover {
+          margin-top: -10px;
+          text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+          transform: translate(0, -8);
+        }
+
+        .wrapper i:nth-child(2) {
+          color: #1da1f2;
+          cursor: pointer;
+          text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+          transition: all ease-in-out 150ms;
+        }
+
+        .wrapper i:nth-child(2):hover {
+          margin-top: -10px;
+          text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+          transform: translate(0, -8);
+        }
+
+        .wrapper i:nth-child(3) {
+          color: #444;
+          cursor: pointer;
+          text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+          transition: all ease-in-out 150ms;
+        }
+
+        .wrapper i:nth-child(3):hover {
+          margin-top: -10px;
+          text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+          transform: translate(0, -5);
+        }
+        .wrapper i:nth-child(4) {
+          color: #fffc00;
+          cursor: pointer;
+          text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+          transition: all ease-in-out 150ms;
+        }
+        .wrapper i:nth-child(4):hover {
+          margin-top: -10px;
+          text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+          transform: translate(0, -8);
         }
       `}</style>
     </div>
