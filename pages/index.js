@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
 
         <p className='description'>
-          The future of legal recruitment is about to begin...
+          The future of legal services is about to begin...
         </p>
 
         <h2 className='subtitle'>
