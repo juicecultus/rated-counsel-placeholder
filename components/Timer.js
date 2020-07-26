@@ -35,7 +35,7 @@ function Timer() {
     }
 
     timerComponents.push(
-      <span>
+      <span key={timeLeft[interval]}>
         {timeLeft[interval]} {interval}{' '}
       </span>
     );
@@ -43,7 +43,6 @@ function Timer() {
 
   return (
     <div className='timer'>
-      <p className='subtitle'>The future of legal services begins in...</p>
       {/* <h1>[EVENT] {year} Countdown</h1> */}
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
     </div>
