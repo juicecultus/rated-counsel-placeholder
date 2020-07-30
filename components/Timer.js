@@ -25,7 +25,7 @@ function Timer() {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  }, []);
+  }, [timeLeft]);
 
   const timerComponents = [];
 
