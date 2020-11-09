@@ -54,7 +54,10 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>Copyright Rated Counsel Limited - all rights reserved</p>
+        <p>
+          Copyright {new Date().getFullYear()} - Rated Counsel Limited - all
+          rights reserved
+        </p>
       </footer>
 
       <style jsx>{`
